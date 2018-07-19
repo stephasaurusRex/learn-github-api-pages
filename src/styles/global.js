@@ -13,7 +13,7 @@ injectGlobal`
   #root {
     @import url('https://fonts.googleapis.com/css?family=Nunito|Lato');
     margin: 0;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     font-family: sans-serif;
     font-size: 20px;
