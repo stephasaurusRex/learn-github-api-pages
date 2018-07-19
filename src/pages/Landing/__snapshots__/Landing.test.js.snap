@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Landing renders without props 1`] = `
+.c1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0;
+  -webkit-animation: bBzLxR 0.5s ease-out forwards;
+  animation: bBzLxR 0.5s ease-out forwards;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.c2 {
+  position: absolute;
+  padding: 1rem;
+  bottom: 0;
+  left: 0;
+}
+
+.c0 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-animation: euXcxa 1s ease-out forwards;
+  animation: euXcxa 1s ease-out forwards;
+}
+
+<div
+  className="c0"
+>
+  <h1
+    className="c1"
+  >
+    I'm just a Boilerplate
+  </h1>
+  <div
+    className="c2"
+  >
+    © 2018 
+    <strong>
+      Acme Inc
+    </strong>
+  </div>
+</div>
+`;

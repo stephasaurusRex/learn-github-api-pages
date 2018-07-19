@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ThemeMenu renders without props 1`] = `
+.c0 {
+  z-index: 10;
+  padding: 20px;
+  background: transparent;
+}
+
+<div
+  className="c0"
+  style={undefined}
+/>
+`;

@@ -1,0 +1,66 @@
+{
+  "name": "github-interview-project",
+  "version": "0.1.0",
+  "scripts": {
+    "analyze": "source-map-explorer build/static/js/main.*",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "clean": "rm -rf node_modules && npm i",
+    "test": "react-scripts test --env=jsdom",
+    "coverage": "npm run test -- --coverage",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
+    "eject": "react-scripts eject",
+    "commit": "git-cz",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "dependencies": {
+    "chroma-js": "^1.3.7",
+    "lodash.get": "^4.4.2",
+    "prop-types": "^15.6.1",
+    "react": "^16.4.0",
+    "react-beautiful-dnd": "^7.1.3",
+    "react-dom": "^16.4.0",
+    "react-grid-layout": "^0.16.6",
+    "react-loadable": "^5.4.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "^1.1.4",
+    "react-transition-group": "^2.3.1",
+    "styled-components": "^3.3.2",
+    "superagent": "^3.8.3"
+  },
+  "config": {
+    "cz-emoji": {},
+    "commitizen": {
+      "path": "cz-emoji"
+    }
+  },
+  "importSort": {
+    ".js": {
+      "style": "module"
+    }
+  },
+  "devDependencies": {
+    "react-app-rewire-less": "^2.1.1",
+    "react-app-rewired": "^1.5.2",
+    "@storybook/addon-info": "^3.4.6",
+    "@storybook/addon-links": "^3.4.6",
+    "@storybook/addons": "^3.4.6",
+    "@storybook/react": "^3.4.6",
+    "@storybook/addon-options": "^3.4.8",
+    "babel-core": "^6.26.3",
+    "babel-plugin-import": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "babel-runtime": "^6.26.0",
+    "commitizen": "^2.10.1",
+    "cz-emoji": "^1.1.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "gh-pages": "^1.2.0",
+    "jest-styled-components": "^5.0.1",
+    "react-test-renderer": "^16.4.0",
+    "source-map-explorer": "^1.5.0",
+    "storybook-readme": "^3.3.0"
+  }
+}
