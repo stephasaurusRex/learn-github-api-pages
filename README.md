@@ -19,8 +19,8 @@ Used to get basic project scaffolding including storybook and test - it turned o
 
 Cryptr - https://www.npmjs.com/package/cryptr
 
-Used for encryption of my oauth keys, because I would want to do that in real life 
-- in this case, I want this to run on github pages - so the decryption key is in the app. 
+Used for encryption of my oauth keys, because I would want to do that in real life. 
+In this case, I want this to run on github pages - so the decryption key is in the app. 
 In real life, I would want to store this in a DB and not have it be available to the whole world. 
 I made a throwaway github account, because I needed to be authenticated to make bunches of calls.
 
