@@ -1,50 +1,56 @@
-import get from "lodash.get";
 import React, { Component } from "react";
-import styled from "styled-components";
-
-import config from "../../config";
-import { fadeColor, fadeIn } from "../../styles";
-
-const LandingTitle = styled.h1`
-  color: ${(props) => get(props, "theme.blends.landing.text")};
-  font-weight: bold;
-  font-size: 1.5rem;
-  align-self: center;
-  text-align: center;
-  text-transform: uppercase;
-  opacity: 0;
-  animation: ${fadeIn()} 0.5s ease-out forwards;
-  animation-delay: 0.5s;
-`;
-
-const LandingFooter = styled.div`
-  position: absolute;
-  padding: 1rem;
-  bottom: 0;
-  left: 0;
-`;
-
-/* the landing page */
+import Card from "../../components/Cards/Card";
+import {initiateGitHub, getRepos, getTopContributor} from "../../services/GitHubService";
 
 class Landing extends Component {
 
-  render() {
-    const { className } = this.props;
+  state = {
+    repos: [],
+  }
 
+  async componentDidMount() {
+    try {
+      initiateGitHub();
+      getRepos().then((body) => {
+        this.setState({
+          repos: body.data.items,
+        });
+        body.data.items.forEach((repo, idx) => {
+          getTopContributor(repo)
+            .then((newRepo) => {
+              body.data.items[idx] = newRepo;
+              this.setState({repos: body.data.items})
+            })
+            .catch(() => {
+              repo.topContributor = { login: 'Error Occurred' };
+              body.data.items[idx] = repo;
+              this.setState({repos: body.data.items})
+            })
+        });
+
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  render() {
     return (
-      <div className={className}>
-        <LandingTitle>I'm just a Boilerplate</LandingTitle>
-        <LandingFooter>{config.copyrightNotice}<strong>{config.company}</strong></LandingFooter>
-      </div>);
+      <div className="grid-container">
+        {
+        this.state.repos && this.state.repos.length > 0 && this.state.repos.map((repo, idx) =>
+          (
+            <Card
+              key={repo.id}
+              rank={idx + 1}
+              repo={repo}>
+            </Card>
+          )
+        )
+      }
+        </div>
+    )
   }
 }
 
-export default styled(Landing) `
-  background: ${(props) => get(props, "theme.blends.landing.accent")};
-  color: ${(props) => get(props, "theme.blends.landing.text")};
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  animation: ${(props) =>
-    fadeColor(get(props, "theme.blends.landing.accent"), get(props, "theme.blends.landing.primary"))} 1s ease-out forwards;
-`;
+export default Landing;

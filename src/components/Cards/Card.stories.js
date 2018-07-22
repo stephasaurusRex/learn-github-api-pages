@@ -2,9 +2,12 @@ import { storiesOf } from "@storybook/react";
 import React from "react";
 import { withDocs } from "storybook-readme";
 
-import GridLayout from "./GridLayout";
+import Card from "./Card";
 import readme from "./README.md";
 
-storiesOf("GridLayout", module)
+storiesOf("Card", module)
   .addDecorator(withDocs(readme))
-  .add("basic usage", () => <GridLayout />);
+  .add("basic usage", () =>
+    <Card
+    >
+    </Card>);

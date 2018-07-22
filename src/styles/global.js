@@ -25,10 +25,75 @@ injectGlobal`
 
     ${media.xl`
       font-size: 16px;
+      height: 100vh;
     `}
 
     ${media.xs`
       font-size: 14px;
     `}
+  }
+  .grid-container {
+    display: grid;
+    grid-auto-flow: row dense;
+    grid-row-gap: 4px;
+    grid-template-columns: 1fr 1fr;
+    background-color: #001D4A;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    background-color: #27476E;
+    color: #EAF8BF;
+    border: 1px solid #006992;
+    padding: 5px;
+    font-size: 14px;
+    text-align: justify;
+    margin: 0px 4px 0px 0px;
+  }
+  
+  a {
+    color: #FF7F11;
+    font-size: 18px;
+  }
+  
+  .repo-title {
+    display: inline;
+  }
+  
+  .repo-stars {
+    display: inline;
+    float: right;
+  }
+  
+  .right-margin {
+    margin-right: 5px;
+  }
+  
+  .first-half {
+    grid-column-start: 1;
+  }
+  
+  .second-half {
+    grid-column-start: 2;
+  }
+  
+  .repo-rank {
+    display: inline;
+    margin-right: 5px;
+    padding: 0px 2px 0px 2px;
+    font-weight: bolder;
+  }
+  
+  .avatar-img {
+    border-radius: 4px;
+    border: 1px solid white;
+    margin-top: 5px;
+    margin-bottom: -4px;
+  }
+  
+  .yellow-link {
+    color: #EAF8BF;
+    font-size: 14px;
+    margin-left: 5px;
   }
 `;

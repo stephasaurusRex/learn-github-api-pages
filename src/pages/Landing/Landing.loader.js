@@ -7,7 +7,7 @@ import styled from "styled-components";
 
 /* component rendered while the landing page is loaded */
 const LoadingLanding = styled.div`
-  background: salmon;
+  background: #FAFAFA;
   height: 100%;
   width: 100%;
 `;

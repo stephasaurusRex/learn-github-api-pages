@@ -2,16 +2,29 @@
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-> Add styled-components, routing, storybook and a sensible project structure to the [create-react-app]() boilerplate.
+> Show the top 100 GitHub Projects, and their top contributor
 
 ## Tech Stack
 
 | frontend          |             |
 | ------------------|-------------|
 | view library      | [react](https://reactjs.org/) |
-| styling           | [styled-components ](https://github.com/styled-components/styled-components) |
-| boilerplate       | [create-react-app](https://github.com/facebook/create-react-app)|
-| documentation     | [storybook](https://github.com/storybooks/storybook) |
+| boilerplate       | [generator-refresh](https://github.com/au-re/generator-refresh)|
+| documentation     | [storybook](https://github.com/storybooks/storybook)
+
+## Extra Tools
+Yeoman - http://yeoman.io/generators/
+    (Used to get basic project scaffolding including storybook and test - it turned out I don't really like how this project does styling - but due to time constraints I worked with it.)
+Cryptr - https://www.npmjs.com/package/cryptr
+    (Used for encryption of my oauth keys, because I would want to do that in real life - in this case, I want this to run on github pages - so the decryption key is in the app. In real life, I would want to store this in a DB and not have it be available to the whole world. I made a throwaway github account, because I needed to be authenticated to make bunches of calls.)
+Font-Awesome - https://www.npmjs.com/package/font-awesome
+    (I like icons)
+Octokit/rest - https://github.com/octokit/rest.js
+    (Wrapper for the github API. I would have used this in real life, so I'm also using it here. Reinventing the wheel is a waste of time.)
+
+
+## Note
+Much of the following text comes from the original Yeoman readme. It is one of the reasons I like using a generator, as it takes makes things pretty/simple/happy.
 
 ## Requirements
 
@@ -19,24 +32,23 @@ You will need the following software installed on your machine:
 
 - [node](https://nodejs.org/en/)
 
-We recomend installing **node** throught [nvm](https://github.com/creationix/nvm), as well as
-updating [npm](https://www.npmjs.com/) to version >=5.
-
-**NOTE**: this repo was only tested on **linux**.
-
 ## Getting started
 
 Navigate to the root of the project and install the dependencies:
 
 ```sh
 cd github-interview-project
-npm i
+npm install
 ```
-
-Now, you can have a look at the boilerplate application:
 
 ```sh
 npm run start
+```
+
+OR
+
+```sh
+yarn start
 ```
 
 ## Scripts
@@ -87,7 +99,7 @@ This will create a build folder with the minimized and transpiled JS.
 
 ### Dependency map
 
-You can generate a map of all dependencies, this can be very usefull when trying to identify a
+You can generate a map of all dependencies, this can be very useful when trying to identify a
 library causing bloat to the application. After building your application you can generate a map,
 by running:
 
