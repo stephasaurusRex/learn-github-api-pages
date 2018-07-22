@@ -15,23 +15,29 @@
 ## Extra Tools
 Yeoman - http://yeoman.io/generators/
 
-    (Used to get basic project scaffolding including storybook and test - it turned out I don't really like how this project does styling - but due to time constraints I worked with it.)
+Used to get basic project scaffolding including storybook and test - it turned out I don't really like how this project does styling - but due to time constraints I worked with it.
 
 Cryptr - https://www.npmjs.com/package/cryptr
 
-    (Used for encryption of my oauth keys, because I would want to do that in real life - in this case, I want this to run on github pages - so the decryption key is in the app. In real life, I would want to store this in a DB and not have it be available to the whole world. I made a throwaway github account, because I needed to be authenticated to make bunches of calls.)
+Used for encryption of my oauth keys, because I would want to do that in real life 
+- in this case, I want this to run on github pages - so the decryption key is in the app. 
+In real life, I would want to store this in a DB and not have it be available to the whole world. 
+I made a throwaway github account, because I needed to be authenticated to make bunches of calls.
 
 Font-Awesome - https://www.npmjs.com/package/font-awesome
 
-    (I like icons)
+I like icons
 
 Octokit/rest - https://github.com/octokit/rest.js
 
-    (Wrapper for the github API. I would have used this in real life, so I'm also using it here. Reinventing the wheel is a waste of time.)
+Wrapper for the github API. I would have used this in real life, so I'm also using it here. 
+Reinventing the wheel is a waste of time.
 
 
 ## Note
-Much of the following text comes from the original Yeoman readme. It is one of the reasons I like using a generator, as it takes makes things pretty/simple/happy.
+Much of the following text comes from the original Yeoman readme. 
+It is one of the reasons I like using a generator, as it makes things pretty/simple/happy. 
+I had never used this generator before, so there was a tiny learning curve there, but it was an enjoyable challenge. 
 
 ## Requirements
 
