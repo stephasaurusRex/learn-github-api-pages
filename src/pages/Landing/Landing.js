@@ -9,22 +9,29 @@ class Landing extends Component {
   }
 
   async componentDidMount() {
+    this.mounted = true;
     try {
       initiateGitHub();
       getRepos().then((body) => {
-        this.setState({
-          repos: body.data.items,
-        });
+        if(this.mounted) {
+          this.setState({
+            repos: body.data.items,
+          });
+        }
         body.data.items.forEach((repo, idx) => {
           getTopContributor(repo)
             .then((newRepo) => {
               body.data.items[idx] = newRepo;
-              this.setState({repos: body.data.items})
+              if(this.mounted) {
+                this.setState({repos: body.data.items})
+              }
             })
             .catch(() => {
               repo.topContributor = { login: 'Error Occurred' };
               body.data.items[idx] = repo;
-              this.setState({repos: body.data.items})
+              if(this.mounted) {
+                this.setState({repos: body.data.items})
+              }
             })
         });
 
@@ -32,6 +39,10 @@ class Landing extends Component {
     } catch (error) {
       console.log(error);
     }
+  }
+
+  componentWillUnmount() {
+    this.mounted = false;
   }
 
   render() {

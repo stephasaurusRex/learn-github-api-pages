@@ -1,6 +1,7 @@
 import { storiesOf } from "@storybook/react";
 import React from "react";
 import { withDocs } from "storybook-readme";
+import "../../styles/global";
 
 import Card from "./Card";
 import readme from "./README.md";

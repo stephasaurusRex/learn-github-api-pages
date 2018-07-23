@@ -1,72 +1,158 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card renders without props 1`] = `
-  .grid-container {
-    display: grid;
-    grid-auto-flow: row dense;
-    grid-row-gap: 4px;
-    grid-template-columns: 1fr 1fr;
-    background-color: #001D4A;
-    padding: 10px;
-  }
-
-  .grid-item {
-    background-color: #27476E;
-    color: #EAF8BF;
-    border: 1px solid #006992;
-    padding: 5px;
-    font-size: 14px;
-    text-align: justify;
-    margin: 0px 4px 0px 0px;
-  }
-
-  a {
-    color: #FF7F11;
-    font-size: 18px;
-  }
-
-  .repo-title {
-    display: inline;
-  }
-
-  .repo-stars {
-    display: inline;
-    float: right;
-  }
-
-  .right-margin {
-    margin-right: 5px;
-  }
-
-  .first-half {
-    grid-column-start: 1;
-  }
-
-  .second-half {
-    grid-column-start: 2;
-  }
-
-  .repo-rank {
-    display: inline;
-    margin-right: 5px;
-    padding: 0px 2px 0px 2px;
-    font-weight: bolder;
-  }
-
-  .avatar-img {
-    border-radius: 4px;
-    border: 1px solid white;
-    margin-top: 5px;
-    margin-bottom: -4px;
-  }
-
-  .yellow-link {
-    color: #EAF8BF;
-    font-size: 14px;
-    margin-left: 5px;
-  }
-
+exports[`Card renders error with insufficient props 1`] = `
 <div
-  className="c0"
-/>
+  className="card grid-item second-half"
+>
+  <div
+    className="repo-rank"
+  >
+    456
+  </div>
+  <div
+    className="repo-title"
+  >
+    <a
+      href="https://testthatcard.com"
+      target="_blank"
+    >
+      Test Repo
+    </a>
+  </div>
+  <div
+    className="repo-stars"
+  >
+    <i
+      aria-hidden="true"
+      className="fa fa-star"
+    />
+    14
+    <i
+      aria-hidden="true"
+      className="fa fa-star"
+    />
+  </div>
+  <div
+    className="top-contributor"
+  >
+    <img
+      alt=""
+      className="avatar-img"
+      height="30"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCuBm8iZkWaoTJ5ruwULeLtYXaExdy3SpmhqkaDkADI0XJP26oZA"
+      width="30"
+    />
+    <a
+      className="yellow-link"
+      href=""
+      target="_blank"
+    >
+      Loading Contributor....
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Card renders with props 1`] = `
+<div
+  className="card grid-item second-half"
+>
+  <div
+    className="repo-rank"
+  >
+    456
+  </div>
+  <div
+    className="repo-title"
+  >
+    <a
+      href="https://testthatcard.com"
+      target="_blank"
+    >
+      Test Repo
+    </a>
+  </div>
+  <div
+    className="repo-stars"
+  >
+    <i
+      aria-hidden="true"
+      className="fa fa-star"
+    />
+    14
+    <i
+      aria-hidden="true"
+      className="fa fa-star"
+    />
+  </div>
+  <div
+    className="top-contributor"
+  >
+    <img
+      alt="barry manilow"
+      className="avatar-img"
+      height="30"
+      src="https://google.com"
+      width="30"
+    />
+    <a
+      className="yellow-link"
+      href="http://thisisnotreal.com"
+      target="_blank"
+    >
+      barry manilow
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Card renders without props 1`] = `
+<div
+  className="card grid-item second-half"
+>
+  <div
+    className="repo-rank"
+  />
+  <div
+    className="repo-title"
+  >
+    <a
+      href="Loading Repo..."
+      target="_blank"
+    >
+      
+    </a>
+  </div>
+  <div
+    className="repo-stars"
+  >
+    <i
+      aria-hidden="true"
+      className="fa fa-star"
+    />
+    
+    <i
+      aria-hidden="true"
+      className="fa fa-star"
+    />
+  </div>
+  <div
+    className="top-contributor"
+  >
+    <img
+      alt=""
+      className="avatar-img"
+      height="30"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCuBm8iZkWaoTJ5ruwULeLtYXaExdy3SpmhqkaDkADI0XJP26oZA"
+      width="30"
+    />
+    <a
+      className="yellow-link"
+      href=""
+      target="_blank"
+    >
+      Loading Contributor....
+    </a>
+  </div>
+</div>
 `;
