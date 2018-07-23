@@ -3,17 +3,19 @@ Cards
 
 Some dummy elements to demo the project structure.
 
-You can display your cards in a list with this component.
+You can display a card with this component.
 
 ```js
-import CardList from "components/CardList";
+import Card from "components/Card";
 
-const MyList = () =>
-  <CardList>
-    <CardList.Card title="hello world">card 1</CardList.Card>
-    <CardList.Card title="hello world">card 2</CardList.Card>
-    <CardList.Card title="hello world">card 3</CardList.Card>
-  </CardList>
+const Card = () =>
+  <Card
+    key=12
+    rank=45
+    repo={repo}>
+  </Card>
 ```
+
+Where repo is a github repo.
 
 <!-- STORY -->

@@ -3,12 +3,12 @@ import "jest-styled-components";
 import React from "react";
 import renderer from "react-test-renderer";
 
-import CardList from "./Card";
+import Card from "./Card";
 
-describe("CardList", () => {
+describe("Card", () => {
 
   it("renders without props", () => {
-    const tree = renderer.create(<CardList />).toJSON();
+    const tree = renderer.create(<Card/>).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

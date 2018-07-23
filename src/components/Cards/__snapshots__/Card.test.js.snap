@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Landing renders without props 1`] = `
+exports[`Card renders without props 1`] = `
   .grid-container {
     display: grid;
     grid-auto-flow: row dense;
@@ -65,20 +65,8 @@ exports[`Landing renders without props 1`] = `
     font-size: 14px;
     margin-left: 5px;
   }
+
 <div
   className="c0"
->
-    {
-          this.state.repos && this.state.repos.length > 0 && this.state.repos.map((repo, idx) =>
-            (
-              <Card
-                key={repo.id}
-                rank={idx + 1}
-                repo={repo}>
-              </Card>
-            )
-          )
-        }
-          </div>
-
+/>
 `;
