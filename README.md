@@ -15,22 +15,22 @@ View in github pages at: https://stephasaurusrex.github.io/github-interview-proj
 | documentation     | [storybook](https://github.com/storybooks/storybook)
 
 ## Extra Tools
-Yeoman - http://yeoman.io/generators/
+# Yeoman - http://yeoman.io/generators/
 
 Used to get basic project scaffolding including storybook and test - it turned out I don't really like how this project does styling - but due to time constraints I worked with it.
 
-Cryptr - https://www.npmjs.com/package/cryptr
+# Cryptr - https://www.npmjs.com/package/cryptr
 
 Used for encryption of my oauth keys, because I would want to do that in real life. 
 In this case, I want this to run on github pages - so the decryption key is in the app. 
 In real life, I would want to store this in a DB and not have it be available to the whole world. 
 I made a throwaway github account, because I needed to be authenticated to make bunches of calls.
 
-Font-Awesome - https://www.npmjs.com/package/font-awesome
+# Font-Awesome - https://www.npmjs.com/package/font-awesome
 
 I like icons
 
-Octokit/rest - https://github.com/octokit/rest.js
+# Octokit/rest - https://github.com/octokit/rest.js
 
 Wrapper for the github API. I would have used this in real life, so I'm also using it here. 
 Reinventing the wheel is a waste of time.
