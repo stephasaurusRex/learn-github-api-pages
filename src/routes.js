@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 
-import Landing from "./pages/Landing/Landing.loader";
+import Landing from "./pages/Landing/Landing";
 
 /* Application Routes */
 
