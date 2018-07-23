@@ -42,7 +42,9 @@ I ended up using react-app-rewire-babel-loader to fix that problem.
 ## Note
 Much of the following text comes from the original Yeoman readme. 
 It is one of the reasons I like using a generator, as it makes things pretty/simple/happy. 
-I had never used this generator before, so there was a tiny learning curve there, but it was an enjoyable challenge. 
+I had never used this generator before, so there was a tiny learning curve there, but it was an enjoyable challenge.
+
+It is edited for my project specfics.
 
 ## Requirements
 
@@ -91,7 +93,7 @@ You can run all tests in the project with the following command:
 ```sh
 npm run test
 ```
-If you are on Mac OS High Sierra 
+If you are on Mac OS High Sierra running tests may not be straightforward! 
 
 I used the following two links to make it so I could run tests:
 https://gist.github.com/brennanMKE/f6aa55b452ecda2f4c7a379e21647c88
