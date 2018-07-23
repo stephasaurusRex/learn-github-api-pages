@@ -26,6 +26,8 @@ In this case, I want this to run on github pages - so the decryption key is in t
 In real life, I would want to store this in a DB and not have it be available to the whole world. 
 I made a throwaway github account, because I needed to be authenticated to make bunches of calls.
 
+See: https://developer.github.com/v3/rate_limit/
+
 ### Font-Awesome - https://www.npmjs.com/package/font-awesome
 
 I like icons
