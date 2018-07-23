@@ -33,6 +33,9 @@ Octokit/rest - https://github.com/octokit/rest.js
 Wrapper for the github API. I would have used this in real life, so I'm also using it here. 
 Reinventing the wheel is a waste of time.
 
+Octokit actually gave me some trouble when trying to build a production build, because it doesn't download precompiled.
+I ended up using react-app-rewire-babel-loader to fix that problem. 
+
 
 ## Note
 Much of the following text comes from the original Yeoman readme. 
