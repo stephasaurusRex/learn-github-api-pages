@@ -1,8 +1,13 @@
 {
-  "main.js": "static/js/main.ced69cf6.js",
-  "main.js.map": "static/js/main.ced69cf6.js.map",
-  "static/js/0.5a91d964.chunk.js": "static/js/0.5a91d964.chunk.js",
-  "static/js/0.5a91d964.chunk.js.map": "static/js/0.5a91d964.chunk.js.map",
-  "static/js/1.f9faa8e2.chunk.js": "static/js/1.f9faa8e2.chunk.js",
-  "static/js/1.f9faa8e2.chunk.js.map": "static/js/1.f9faa8e2.chunk.js.map"
+  "main.css": "static/css/main.c3c423e6.css",
+  "main.css.map": "static/css/main.c3c423e6.css.map",
+  "main.js": "static/js/main.bf670881.js",
+  "main.js.map": "static/js/main.bf670881.js.map",
+  "static/js/0.fe485154.chunk.js": "static/js/0.fe485154.chunk.js",
+  "static/js/0.fe485154.chunk.js.map": "static/js/0.fe485154.chunk.js.map",
+  "static/media/fontawesome-webfont.eot": "static/media/fontawesome-webfont.674f50d2.eot",
+  "static/media/fontawesome-webfont.svg?v=4.7.0": "static/media/fontawesome-webfont.912ec66d.svg",
+  "static/media/fontawesome-webfont.ttf?v=4.7.0": "static/media/fontawesome-webfont.b06871f2.ttf",
+  "static/media/fontawesome-webfont.woff2?v=4.7.0": "static/media/fontawesome-webfont.af7ae505.woff2",
+  "static/media/fontawesome-webfont.woff?v=4.7.0": "static/media/fontawesome-webfont.fee66e71.woff"
 }
