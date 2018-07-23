@@ -89,6 +89,12 @@ You can run all tests in the project with the following command:
 ```sh
 npm run test
 ```
+If you are on Mac OS High Sierra 
+
+I used the following two links to make it so I could run tests:
+https://gist.github.com/brennanMKE/f6aa55b452ecda2f4c7a379e21647c88
+https://gist.github.com/dalegaspi/7d336944041f31466c0f9c7a17f7d601
+
 
 You can also generate a website with information on the code coverage with:
 
