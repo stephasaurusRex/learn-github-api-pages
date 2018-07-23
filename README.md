@@ -4,6 +4,8 @@
 
 > Show the top 100 GitHub Projects, and their top contributor
 
+View in github pages at: https://stephasaurusrex.github.io/github-interview-project/
+
 ## Tech Stack
 
 | frontend          |             |
